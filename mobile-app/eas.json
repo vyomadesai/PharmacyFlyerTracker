@@ -1,0 +1,27 @@
+{
+    "cli": {
+      "version": ">= 14.0.0"
+    },
+    "build": {
+      "preview": {
+        "distribution": "internal",
+        "env": {
+          "EXPO_PUBLIC_API_BASE_URL":"https://domains-stretch-climb-allocation.trycloudflare.com/api"
+        },
+        "ios": {
+          "simulator": false
+        },
+        "android": {
+          "buildType": "apk"
+        }
+      },
+      "production": {
+        "env": {
+          "EXPO_PUBLIC_API_BASE_URL": "https://domains-stretch-climb-allocation.trycloudflare.com/api"
+        }
+      }
+    },
+    "submit": {
+      "production": {}
+    }
+  }

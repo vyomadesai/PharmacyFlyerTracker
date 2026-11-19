@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Pharmacy Flyer Tracker",
+    "slug": "pharmacy-flyer-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "pharmacy-flyer",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow Pharmacy Flyer Tracker to use your location for route check-in and stop verification."
+        }
+      ]
+    ],
+    "ios": {
+      "bundleIdentifier": "com.pharmacyflyer.mobile",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app uses your location to build your route and verify check-in at stops.",
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true
+        }
+      }
+    },
+    "android": {
+      "package": "com.pharmacyflyer.mobile",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "usesCleartextTraffic": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "320bd924-987a-491a-8cfb-f9e82f8aed3c"
+      }
+    }
+  }
+}

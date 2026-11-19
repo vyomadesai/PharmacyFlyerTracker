@@ -1,0 +1,16 @@
+{
+  "name": "distribution-route-optimizer",
+  "version": "1.0.0",
+  "description": "Location-to-location distribution route optimizer for a doctor list (Node.js, zero dependencies).",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "optimize-routes": "optimize_routes.js"
+  },
+  "scripts": {
+    "start": "node optimize_routes.js"
+  },
+  "license": "MIT"
+}

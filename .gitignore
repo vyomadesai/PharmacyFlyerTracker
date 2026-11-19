@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Build / cache
+.next/
+dist/
+.expo/
+.turbo/
+coverage/
+
+# Environment (keep *.example files)
+.env
+.env.local
+.env.*.local
+
+# Route optimizer runtime cache (regenerated on use)
+data_processing_node/cache/*
+!data_processing_node/cache/.gitkeep
+data_processing_node/routes_output/*
+!data_processing_node/routes_output/.gitkeep
+data_processing_node/VyomaNode/*
+!data_processing_node/VyomaNode/.gitkeep
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+
+# Archives
+*.zip
+
+# NPPES bulk files are larger than GitHub's 100 MB limit
+nppes_florida_providers.csv
+nppes-fl-export/extracted/npidata_pfile_20050523-20260712.csv
+nppes-fl-export/extracted/endpoint_pfile_20050523-20260712.csv
+nppes-fl-export/extracted/pl_pfile_20050523-20260712.csv
